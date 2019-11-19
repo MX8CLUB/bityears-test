@@ -15,9 +15,16 @@ export function init() {
         adapter = new FileSync(url);
         db = low(adapter);
         db.defaults({
-            whiteList: [],
+            whiteList: [
+                {
+                    "name": "梦想吧",
+                    "url": "https://www.mx8.club/"
+                }
+            ],
             blackList: [],
-            urlList: [],
+            urlList: [
+                "www.mx8.club"
+            ],
             workNumber: 10,
             timeout: 20
         })
