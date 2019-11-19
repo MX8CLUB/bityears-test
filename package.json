@@ -1,0 +1,75 @@
+{
+  "name": "bityears-test",
+  "description": "网站测试工具 - 比特年华网络工作室出品",
+  "version": "1.1.0",
+  "private": true,
+  "author": "比特年华网络工作室",
+  "main": "./build/main.js",
+  "homepage": ".",
+  "build": {
+    "appId": "cn.bityears.test",
+    "productName": "网站测试工具 - 比特年华网络工作室出品",
+    "copyright": "Copyright © 2019 比特年华网络工作室",
+    "extends": null,
+    "asar": true,
+    "directories": {
+      "buildResources": "./build",
+      "output": "./dist"
+    },
+    "files": [
+      "./build/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "antd": "^3.25.1",
+    "babel-plugin-import": "^1.12.2",
+    "customize-cra": "^0.8.0",
+    "lodash": "^4.17.15",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0",
+    "react": "^16.11.0",
+    "react-app-rewired": "^2.1.5",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "xlsx": "^0.15.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "estart": "cross-env NODE_ENV=dev electron ./public/main.js",
+    "dist": "electron-builder build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "electron": "^6.1.4",
+    "electron-builder": "^22.1.0"
+  }
+}
