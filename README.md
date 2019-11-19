@@ -9,6 +9,9 @@
 
 使用Electron+React写的一款桌面应用，工作原因，做了这款工具，就是偷懒用的。自动化测试，UI采用Antd，数据库使用了轻量级json数据库管理--lowdb，总体代码不是很多，很多地方可能写的不是非常好。小毛病很多，不适合正式环境。
 
+测试网址修改方法：
+在项目第一次运行初始化之后，位于C:\Users\Administrator\AppData\Roaming\bityears-test目录下会生成一个db.json的文件，workNumber为最大任务数，timeout为超时时间，urlList为测试列表，数组形式
+
 实现的功能有
 
 - URL测试
