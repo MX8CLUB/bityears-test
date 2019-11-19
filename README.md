@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React Index](https://github.com/facebook/create-react-app).
+# bityears-test
 
-## Available Scripts
+<a href="https://github.com/MX8CLUB/bityears-test/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/MX8CLUB/bityears-test.svg?color=blu"></a>
+<a href="https://github.com/MX8CLUB/bityears-test/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MX8CLUB/bityears-test.svg"></a>
+<a href="https://github.com/MX8CLUB/bityears-test/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MX8CLUB/bityears-test.svg"></a>
+<a href="https://github.com/MX8CLUB/bityears-test/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/MX8CLUB/bityears-test/total.svg?color=yellow"></a>
 
-In the project directory, you can run:
+比特年华网站测试工具V1.1.0
 
-### `yarn start`
+使用Electron+React写的一款桌面应用，工作原因，做了这款工具，就是偷懒用的。自动化测试，UI采用Antd，数据库使用了轻量级json数据库管理--lowdb，总体代码不是很多，很多地方可能写的不是非常好。小毛病很多，不适合正式环境。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+实现的功能有
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- URL测试
+- 错误地址导出（Txt）
+- 测试历史记录导出（Excel）
+- URL白名单
 
-### `yarn test`
+计划中功能
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 应用内修改URL列表
+- URL黑名单列表
+- URL白名单修改
+- URL测试成功截图
 
-### `yarn build`
+## 目录
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [项目依赖](#项目依赖)
+* [安装](#安装)
+* [相关截图](#相关截图)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 项目依赖
+本项目采用依赖项目及版本如下
+- "antd": "^3.25.1",
+- "babel-plugin-import": "^1.12.2",
+- "customize-cra": "^0.8.0",
+- "lodash": "^4.17.15",
+- "lodash-id": "^0.14.0",
+- "lowdb": "^1.0.0",
+- "react": "^16.11.0",
+- "react-app-rewired": "^2.1.5",
+- "react-dom": "^16.11.0",
+- "react-router-dom": "^5.1.2",
+- "react-scripts": "3.2.0",
+- "xlsx": "^0.15.1"
+- "cross-env": "^6.0.3",
+- "electron": "^6.1.4",
+- "electron-builder": "^22.1.0"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 使用
 
-### `yarn eject`
+github [项目地址](https://github.com/MX8CLUB/bityears-test)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+本项目适用于相关技术人员学习交流，请自行编译安装
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone https://github.com/MX8CLUB/bityears-test.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+cd bityears-test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+yarn
 
-## Learn More
+# 启动React
+yarn start
+# 启动Electron
+yarn estart
+# 打包windows版本
+yarn build&&yarn dist
+```
 
-You can learn more in the [Create React Index documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 相关截图
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 首页
 
-### Code Splitting
+![首页][1]
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### 测试中
 
-### Analyzing the Bundle Size
+![测试中][2]
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### 测试结束
 
-### Making a Progressive Web Index
+![测试结束][3]
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### 导出历史记录
 
-### Advanced Configuration
+![QQ导出历史记录][5]
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  [1]: https://www.mx8.club/usr/uploads/2019/11/2103622306.png
+  [2]: https://www.mx8.club/usr/uploads/2019/11/4149030414.png
+  [3]: https://www.mx8.club/usr/uploads/2019/11/3982079810.png
+  [4]: https://www.mx8.club/usr/uploads/2019/11/3982079810.png
+  [5]: https://www.mx8.club/usr/uploads/2019/11/13990925.png
